@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="addCommentButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="saveCommentsButton" min="-2" pref="96" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" pref="376" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="250" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="saveCommentsButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addCommentButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="commentsTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new MyTableModel1()" type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="commentsTableMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="// set the minimum width  of that colum&#xa;        TableColumn serialColumn = commentsTable.getColumnModel().getColumn(0);&#xa;        serialColumn.setWidth(50);&#xa;        serialColumn.setMaxWidth(50);&#xa;        serialColumn.setMinWidth(50);&#xa;        serialColumn.setResizable(false);&#xa;&#xa;        TableColumn queryIdColumn = commentsTable.getColumnModel().getColumn(6);&#xa;        queryIdColumn.setWidth(0);&#xa;        queryIdColumn.setMaxWidth(0);&#xa;        queryIdColumn.setMinWidth(0);&#xa;        queryIdColumn.setResizable(false);&#xa;        &#xa;        TableColumn viewColumn = commentsTable.getColumnModel().getColumn(4);&#xa;        viewColumn.setWidth(50);&#xa;        viewColumn.setMaxWidth(50);&#xa;        viewColumn.setMinWidth(50);&#xa;        viewColumn.setCellRenderer(new IconTableCellRenderer(&quot;View&quot;));&#xa;        viewColumn.setResizable(false);&#xa;        &#xa;        TableColumn deleteColumn = commentsTable.getColumnModel().getColumn(5);&#xa;        deleteColumn.setWidth(50);&#xa;        deleteColumn.setMaxWidth(50);&#xa;        deleteColumn.setMinWidth(50);&#xa;        deleteColumn.setCellRenderer(new IconTableCellRenderer(&quot;Delete&quot;));&#xa;        deleteColumn.setResizable(false);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JTableHeader header = commentsTable.getTableHeader();&#xa;header.setBackground(new Color(192, 191, 200));&#xa;header.setPreferredSize(new Dimension(600,35));&#xa;Font font = new Font(&quot;Serif&quot;, Font.BOLD, 14);&#xa;header.setForeground(new Color(0, 103, 204));&#xa;&#xa;header.setFont(font);&#xa;commentsTable.setRowHeight(30);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="addCommentButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add Comment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addCommentButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="saveCommentsButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveCommentsButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

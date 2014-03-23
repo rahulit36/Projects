@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="outerMostPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="outerMostPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="outerMostPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="6f" green="3c" red="c" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="emailPanel" alignment="0" max="32767" attributes="0"/>
+                      <Component id="subjectPanel" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="sendButton" min="-2" pref="115" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="closeButton" min="-2" pref="121" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane4" alignment="0" pref="652" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="emailPanel" min="-2" pref="103" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="subjectPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane4" pref="198" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="closeButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="sendButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="emailPanel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ccLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="toLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="bccLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane3" max="32767" attributes="0"/>
+                          <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="toLabel" pref="30" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jScrollPane2" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="ccLabel" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                              <Component id="bccLabel" min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="toLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="To: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ccLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="cc:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="bccLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bcc:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Properties>
+                <Property name="verticalScrollBarPolicy" type="int" value="21"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="toIdPanel">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="6f" green="3c" red="c" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="if(toEmailList != null){&#xa;for(int i = 0;i&lt;toEmailList.size();i++){&#xa;      &#x9;spaceLabel = new javax.swing.JLabel();&#xa;      &#x9;toIdLabel = new javax.swing.JLabel();&#xa;      &#x9;toDelButton = new javax.swing.JButton();&#xa;      &#x9;toIdLabel.setText( toEmailList.get(i));&#xa;      &#x9;spaceLabel.setText(&quot;  &quot;);&#xa;//      &#x9;deleteButton.setText(&quot;Del&quot;+i);&#xa;//      &#x9;toDelButton.setIcon(new ImageIcon(getClass().getResource(&quot;/images/delete.png&quot;)));&#xa;//      &#x9;toDelButton.setBackground(new java.awt.Color(184, 212, 239));&#xa;//      &#x9;toDelButton.setFont(new java.awt.Font(&quot;DejaVu Sans&quot;, 1, 13)); // NOI18N&#xa;//      &#x9;toDelButton.setForeground(new java.awt.Color(12, 60, 111));&#xa;      &#x9;toDelButton.setText(&quot;X&quot;);&#xa;        toDelButton.setBackground(new java.awt.Color(12,60,111));&#xa;      &#x9;toDelButton.setFont(new java.awt.Font(&quot;DejaVu Sans&quot;, 1, 10)); // NOI18N&#xa;      &#x9;toDelButton.setForeground(new java.awt.Color(255,0,0));&#xa;        toDelButton.setBorder(BorderFactory.createEmptyBorder());&#xa;//      &#x9;deleteButton.setText(&quot;Close&quot;);&#xa;      &#x9;toDelButton.addActionListener(new java.awt.event.ActionListener() {&#xa;              public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                  toDelActionPerformed(evt);&#xa;              }&#xa;          });&#xa;      &#x9;toIdLabel.setForeground(new java.awt.Color(255,255,255));&#xa;      &#x9;toIdLabel.setName(&quot;labelDel&quot;+i);&#xa;      &#x9;toDelButton.setName(&quot;&quot;+i);&#xa;      &#x9;toIdPanel.add(toIdLabel);&#xa;      &#x9;toIdPanel.add(toDelButton);&#xa;      &#x9;toIdPanel.add(spaceLabel);&#xa;      }&#xa;}"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="3"/>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <Properties>
+                <Property name="verticalScrollBarPolicy" type="int" value="21"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="ccIdPanel">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="6f" green="3c" red="c" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="if(ccEmailList != null){&#xa;for(int i = 0;i&lt;ccEmailList.size();i++){&#xa;    &#x9;spaceLabel = new javax.swing.JLabel();&#xa;    &#x9;ccIdLabel = new javax.swing.JLabel();&#xa;    &#x9;ccDelButton = new javax.swing.JButton();&#xa;    &#x9;ccIdLabel.setText( ccEmailList.get(i));&#xa;    &#x9;spaceLabel.setText(&quot;  &quot;);&#xa;//    &#x9;deleteButton.setText(&quot;Del&quot;+i);&#xa;//    &#x9;ccDelButton.setIcon(new ImageIcon(getClass().getResource(&quot;/images/delete.png&quot;)));&#xa;//    &#x9;ccDelButton.setBackground(new java.awt.Color(184, 212, 239));&#xa;//    &#x9;ccDelButton.setFont(new java.awt.Font(&quot;DejaVu Sans&quot;, 1, 13)); // NOI18N&#xa;//    &#x9;ccDelButton.setForeground(new java.awt.Color(12, 60, 111));&#xa;        ccDelButton.setText(&quot;X&quot;);&#xa;        ccDelButton.setBackground(new java.awt.Color(12,60,111));&#xa;      &#x9;ccDelButton.setFont(new java.awt.Font(&quot;DejaVu Sans&quot;, 1, 10)); // NOI18N&#xa;      &#x9;ccDelButton.setForeground(new java.awt.Color(255,0,0));&#xa;        ccDelButton.setBorder(BorderFactory.createEmptyBorder());&#xa;//    &#x9;deleteButton.setText(&quot;Close&quot;);&#xa;    &#x9;ccDelButton.addActionListener(new java.awt.event.ActionListener() {&#xa;            public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;                ccDelActionPerformed(evt);&#xa;            }&#xa;        });&#xa;    &#x9;ccIdLabel.setForeground(new java.awt.Color(255,255,255));&#xa;    &#x9;ccIdLabel.setName(&quot;labelDel&quot;+i);&#xa;    &#x9;ccDelButton.setName(&quot;&quot;+i);&#xa;    &#x9;ccIdPanel.add(ccIdLabel);&#xa;    &#x9;ccIdPanel.add(ccDelButton);&#xa;    &#x9;ccIdPanel.add(spaceLabel);&#xa;    }&#xa;}"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="3"/>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <Properties>
+                <Property name="verticalScrollBarPolicy" type="int" value="21"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="bccIdPanel">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="6f" green="3c" red="c" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_LayoutCodePre" type="java.lang.String" value="if(bccEmailList != null){&#xa;for(int i = 0;i&lt;bccEmailList.size();i++){&#xa;  &#x9;spaceLabel = new javax.swing.JLabel();&#xa;  &#x9;bccIdLabel = new javax.swing.JLabel();&#xa;  &#x9;bccDelButton = new javax.swing.JButton();&#xa;  &#x9;bccIdLabel.setText( bccEmailList.get(i));&#xa;  &#x9;spaceLabel.setText(&quot;  &quot;);&#xa;        bccDelButton.setText(&quot;X&quot;);&#xa;        bccDelButton.setBackground(new java.awt.Color(12,60,111));&#xa;      &#x9;bccDelButton.setFont(new java.awt.Font(&quot;DejaVu Sans&quot;, 1, 10)); // NOI18N&#xa;      &#x9;bccDelButton.setForeground(new java.awt.Color(255,0,0));&#xa;        bccDelButton.setBorder(BorderFactory.createEmptyBorder());&#xa;bccDelButton.addActionListener(new java.awt.event.ActionListener() {&#xa;          public void actionPerformed(java.awt.event.ActionEvent evt) {&#xa;              bccDelActionPerformed(evt);&#xa;          }&#xa;      });&#xa;  &#x9;bccIdLabel.setForeground(new java.awt.Color(255,255,255));&#xa;  &#x9;bccIdLabel.setName(&quot;labelDel&quot;+i);&#xa;  &#x9;bccDelButton.setName(&quot;&quot;+i);&#xa;  &#x9;bccIdPanel.add(bccIdLabel);&#xa;  &#x9;bccIdPanel.add(bccDelButton);&#xa;  &#x9;bccIdPanel.add(spaceLabel);&#xa;  }&#xa;}"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="3"/>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="subjectPanel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="subjectLabel" min="-2" pref="76" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="subjectTextField" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="subjectTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="subjectLabel" alignment="3" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="subjectLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Subject:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="subjectTextField">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="bodyTextArea">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="closeButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="13" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="6f" green="3c" red="c" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Close"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="sendButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="13" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="6f" green="3c" red="c" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Send"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sendButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

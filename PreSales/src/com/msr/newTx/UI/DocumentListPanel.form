@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="addListButton" min="-2" pref="112" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="manageDocButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="saveDocButton" min="-2" pref="98" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" pref="387" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="224" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="saveDocButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="manageDocButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addListButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="documentListTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] { },&#xa;    new String [] {&#xa;        &quot;S.No.&quot;, &quot;Document Name&quot;, &quot;Type&quot;, &quot;Status&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;&#xa;    }&#xa;)" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="documentListTableMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="requirementType = new javax.swing.JComboBox();&#xa;statusType = new javax.swing.JComboBox();"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="// set the delete button&#xa;        TableColumn hiddenColumn = documentListTable.getColumnModel().getColumn(7);&#xa;        hiddenColumn.setWidth(0);&#xa;        hiddenColumn.setMinWidth(0);&#xa;        hiddenColumn.setMaxWidth(0);&#xa;        TableColumn docIdColumn = documentListTable.getColumnModel().getColumn(8);&#xa;        docIdColumn.setWidth(0);&#xa;        docIdColumn.setMinWidth(0);&#xa;        docIdColumn.setMaxWidth(0);&#xa; TableColumn col6 = documentListTable.getColumnModel().getColumn(6);&#xa;        col6.setWidth(0);&#xa;        col6.setMinWidth(0);&#xa;        col6.setMaxWidth(0);&#xa; TableColumn col9 = documentListTable.getColumnModel().getColumn(9);&#xa;        col9.setMaxWidth(40);&#xa;col9.setResizable(false);&#xa;col6.setResizable(false);&#xa;&#xa;&#xa;        &#xa;        TableColumn dirColumn = documentListTable.getColumnModel().getColumn(10);&#xa;        dirColumn.setWidth(0);&#xa;        dirColumn.setMinWidth(0);&#xa;        dirColumn.setMaxWidth(0);&#xa; TableColumn col12 = documentListTable.getColumnModel().getColumn(12);&#xa;        col12.setWidth(0);&#xa;        col12.setMinWidth(0);&#xa;        col12.setMaxWidth(0);&#xa;        &#xa;        TableColumn dirPathColumn = documentListTable.getColumnModel().getColumn(11);&#xa;        dirPathColumn.setWidth(0);&#xa;        dirPathColumn.setMinWidth(0);&#xa;        dirPathColumn.setMaxWidth(0);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="JTableHeader header = documentListTable.getTableHeader();&#xa;header.setBackground(new Color(192, 191, 200));&#xa;header.setPreferredSize(new Dimension(600,35));&#xa;Font font = new Font(&quot;Serif&quot;, Font.BOLD, 14);&#xa;header.setForeground(new Color(0, 103, 204));&#xa;&#xa;header.setFont(font);&#xa;documentListTable.setRowHeight(30);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="saveDocButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveDocButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="manageDocButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Manage Documents"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageDocButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addListButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add List"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addListButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
